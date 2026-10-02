@@ -15,3 +15,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check local Markdown targets and SVG files
         run: python3 scripts/check_showcase.py
+      - name: Run static checker and CI-contract regression fixtures
+        run: python3 -m unittest discover -s scripts -p 'test_*.py' -v

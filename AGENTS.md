@@ -9,10 +9,14 @@ Keep private source links, code, prompts, credentials, personal data, and
 operational details out of the public repository. Do not imply system integration
 or automation where a person carries context between systems.
 
-There is no application runtime or software test suite. The CI workflow checks
-that local Markdown targets exist and SVG files are well-formed.
+There is no application runtime. The CI workflow checks local Markdown targets
+and SVG XML, then runs the offline checker and CI-contract regression suite.
 
 ## Test commands
 
 Run `python3 scripts/check_showcase.py` for the repository-owned static check.
 The QA manifest and CI workflow use the same command.
+
+Run `python3 -m unittest discover -s scripts -p 'test_*.py' -v` for all offline
+regression fixtures. The same command is required in the artifact-validation CI
+job; fixture success does not verify remote links, product claims or live services.
