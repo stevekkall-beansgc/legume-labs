@@ -2,6 +2,8 @@
 
 Public links and versions below were checked on **2026-09-25**. Version numbers refer to the latest release visible on each repository's Releases page at that time.
 
+This register is historical. See the [initial October 2 baseline](docs/SHOWCASE-EVIDENCE-BASELINE-20261002.md) and [later October 2 public evidence index](docs/CURRENT-PUBLIC-EVIDENCE-20261002.md) for separate observations; the statements below retain their original date and scope.
+
 | Project or tool | Public source | Latest checked release | Demonstration or evidence path |
 | --- | --- | --- | --- |
 | Bean Counter | [Repository](https://github.com/stevekkall-beansgc/bean-counter) | [v0.3.0](https://github.com/stevekkall-beansgc/bean-counter/releases/tag/v0.3.0) | [Release integration walkthrough](https://github.com/stevekkall-beansgc/bean-counter/blob/v0.3.0/examples/integration/README.md); the walkthrough labels its data synthetic. Ongoing-work status is owner supplied. |

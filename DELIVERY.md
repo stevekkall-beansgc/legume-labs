@@ -8,10 +8,10 @@ This guide describes four separate products, two shared developer tools, and a r
 
 The products address different jobs. Their public repositories and release pages are separate, and one product's evidence should not be read as evidence for another.
 
-- **Bean Counter** is a local SQLite billing CLI. Its v0.3.0 release includes a synthetic integration walkthrough. Ongoing work is owner-confirmed; the release does not indicate a hosted billing service.
+- **Bean Counter** is a local SQLite billing CLI. Its [v0.9.0 release](https://github.com/stevekkall-beansgc/bean-counter/releases/tag/v0.9.0) records platform-specific native qualification and limitations. The original v0.3.0 walkthrough remains historical. No hosted billing or payment processing is implied.
 - **BeanFit** estimates model and runtime fit for a device and makes uncertainty visible. Its sample output is an estimate, not a performance benchmark.
-- **BeanFit App** provides an account and device companion flow for BeanFit recommendations. A deployed service component is confirmed internally, but the repository does not list a public visitor demo URL. Automatic update alerts remain planned.
-- **Jumping Beans** presents a shopper-controlled offer journey. The project is owner-confirmed frozen; its public showcase does not imply active storefront partnerships or live commerce operations.
+- **BeanFit App** provides an account and device registration flow for BeanFit recommendations. GitHub metadata lists a public service URL, but this evidence refresh did not qualify the hosted customer journey. Registration saves a snapshot; automatic refresh and delivered update alerts are not demonstrated here.
+- **Jumping Beans** presents a shopper-controlled offer journey. The September 25 overview recorded owner-confirmed frozen status; current work-state intent was not reconfirmed in this refresh. Its public showcase does not imply active storefront partnerships or live commerce operations.
 
 ## 2. Shared developer tools
 
@@ -43,13 +43,15 @@ To confirm adoption for a particular product, inspect its manifest and CI workfl
 | **Released** | A versioned public release exists. This alone says nothing about production use. |
 | **Demonstrated** | A public showcase, walkthrough, or reproducible local demo exists. It is not customer adoption evidence. |
 | **Deployed · owner-confirmed** | Deployment status comes from the owner's workspace, not a public service URL. It does not imply public visitor access. |
+| **Service URL listed** | Public metadata declares a URL. Its presence does not verify reachability, deployed build identity or customer-journey acceptance. |
+| **Unreleased source candidate** | A local proposed change, not merged source, a published release or a deployed correction. |
 | **Ongoing / frozen / planned** | Work-state labels are owner-confirmed or explicitly documented; they are not inferred from a release date. |
 
 ## 5. Evidence route
 
-- [Bean Counter v0.3.0](https://github.com/stevekkall-beansgc/bean-counter/releases/tag/v0.3.0) → [synthetic integration walkthrough](https://github.com/stevekkall-beansgc/bean-counter/blob/v0.3.0/examples/integration/README.md).
-- [BeanFit five-minute showcase](https://github.com/stevekkall-beansgc/beanfit/blob/main/README.md#five-minute-showcase).
-- [QA Kit showcase](https://github.com/stevekkall-beansgc/qa-kit/blob/main/README.md#five-minute-public-showcase) → [Gate Kit synthetic demo](https://github.com/stevekkall-beansgc/gate-kit/blob/main/README.md#2-run-the-synthetic-demo).
+- [Bean Counter v0.9.0](https://github.com/stevekkall-beansgc/bean-counter/releases/tag/v0.9.0) → [version-bound billing quickstart](https://github.com/stevekkall-beansgc/bean-counter/blob/2487dcfa9333b54c8622fd826e289fcaccb7ee22/docs/billing-quickstart.md).
+- [BeanFit five-minute showcase at reviewed source](https://github.com/stevekkall-beansgc/beanfit/blob/9a9dc02fb297a5c4ba3fe8938c96084f18adb7fb/README.md#five-minute-showcase). Assumed bands and editorial quality are not measured calibration.
+- [QA Kit showcase at reviewed source](https://github.com/stevekkall-beansgc/qa-kit/blob/38c7a7bfc078038cfd624ef58d24315e7230e0fe/README.md#five-minute-public-showcase) → [Gate Kit synthetic demo at reviewed source](https://github.com/stevekkall-beansgc/gate-kit/blob/38741affd2034f9b110b4a302ecfc08c4046f722/README.md#2-run-the-synthetic-demo).
 - [Jumping Beans public showcase](https://devpost.com/software/jumping-beans) → [v0.11.0 release](https://github.com/stevekkall-beansgc/jumping-beans/releases/tag/v0.11.0).
 
-The [source register](SOURCE-REGISTER.md) lists the checked public links and separates public evidence from owner-confirmed context.
+The [current evidence index](docs/CURRENT-PUBLIC-EVIDENCE-20261002.md) records exact sources, material claims and unresolved limits. The [source register](SOURCE-REGISTER.md) retains its September 25 history. Neither index promotes local candidate patches into released capabilities.
