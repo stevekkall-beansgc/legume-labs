@@ -1,0 +1,40 @@
+Focused showcase candidate check record
+Observation: 2026-10-04; macOS, installed Python 3.12
+Base: b4c703878f777f366540572546af666e832227c4 plus focused candidate copy/assets
+Checker, tests and workflows are unchanged from that base.
+
+Command: python3.12 -B scripts/check_showcase.py
+Exit status: 0
+Actual stdout:
+Local Markdown targets, supported heading anchors and SVG XML are valid.
+
+Command: python3.12 -B -m unittest discover -s scripts -p 'test_*.py' -v
+Exit status: 0
+Actual result summary:
+Ran 26 tests in 0.011s
+OK
+
+Twelve checker fixtures and fourteen CI-contract cases passed. Their negative
+inputs are synthetic; their pass is not remote-link, product or security clearance.
+This text asset is an excerpt of local command results, not a performance benchmark.
+The scoped central QA driver also returned 2/2 PASS (docs and unit). Its manifest
+used bare python3 for the unit command, resolved to the system interpreter;
+that child's version was not retained. The direct checks above explicitly used
+Python 3.12 and must not be conflated with a uniform central-QA interpreter claim.
+The private closeout binds the final candidate file hashes and mandatory scoped
+central QA result after candidate-only text corrections, if any.
+No new hosted CI, release, deployment or publication is implied.
+
+Separate completion pass, October 4:
+After owner/contact and diagnostic disclosures, the same explicit Python 3.12
+checker returned exit 0 and all 26 fixtures passed (0.011s). git diff --check
+also passed. Unchanged checker/tests; these are fresh local checks, not new CI.
+
+Finalization pass, October 4, after the QA PR's full Ubuntu proof was added:
+Explicit installed Python 3.12.14/macOS; driver and child PATH set to 3.12.
+Checker exit 0: Local Markdown targets, supported heading anchors and SVG XML are valid.
+All 26 checker/CI-contract fixtures passed in 0.008s, OK; no skipped tests.
+Scoped central QA: docs PASS, unit PASS, 2/2; no full-fleet run.
+git diff --check: exit 0.
+These are local results for the revised showcase candidate, not new showcase CI.
+QA PR #11's separate hosted proof does not turn this candidate into a release.

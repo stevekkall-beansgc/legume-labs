@@ -1,0 +1,57 @@
+QA Kit synthetic quickstart: actual partial result, not a passing showcase
+Observation: 2026-10-04
+Source: 29f4d08911eed530cf09c855306b145078de8805 (v0.7.5 source)
+Environment: macOS; driver Python 3.12.14; disposable source archive without .git
+Child unittest command: bare python3 resolved to system interpreter; version unretained
+Command: python3.12 -B examples/synthetic_quickstart.py --verify-sample examples/synthetic_quickstart_report.json
+Exit status: 1
+
+Actual stdout:
+PASS  docs+unit run: exit 0, all 2 results ok, JSON report written
+PASS  failing docs run: exit 1, docs FAIL recorded, JSON report written
+PASS  failing unit run: exit 1, unit FAIL recorded, JSON report written
+
+Actual stderr:
+sample report does not match this quickstart run: examples/synthetic_quickstart_report.json
+
+Interpretation: all three scenario assertions completed; final committed-sample
+comparison failed. No overall success line was printed. Cause unresolved.
+Driver identity does not establish a uniform Python 3.12 execution pipeline.
+Synthetic fixture inputs call the real runner; not customer or fleet evidence.
+Temporary scenario reports were cleaned up by the quickstart; not retained here.
+The sample normalizes fields; the stdout/stderr above are actual, not normalized.
+No retry, omitted verification flag, rewritten sample or upstream fix in this cycle.
+
+Separate completion-pass diagnosis, October 4 (does not replace the run above):
+Exact unchanged source; passing scenario only; macOS; driver Python 3.12.14,
+child Python 3.9.6. Scenario exit 0; normalized actual matched committed sample.
+The original mismatch was not reproduced; interpreter drift is not a proven cause.
+Existing exact-source Ubuntu CI run 37129167180 passed 159 unit tests, including
+the passing-scenario/sample test. That test does not run the complete quickstart
+CLI. No full supported replay, sample rewrite or upstream correction is implied.
+
+Approved finalization pass: complete supported-environment CLI proof
+Observation: 2026-10-04; new result, not a replacement of the failure above
+Source: 595812b22269527dfad3952b1739eba7a36ad1ba (QA PR #11, not merged/released at capture; merged October 4 afterward)
+Base: 29f4d08911eed530cf09c855306b145078de8805; only test_public_docs.py changed
+Runner, quickstart and sample bytes unchanged from the base
+Environment: GitHub-hosted ubuntu-latest; driver and child Python 3.12.14
+Run: https://github.com/stevekkall-beansgc/qa-kit/actions/runs/37214014615
+Job: unittest; full suite 160 tests in 10.248s, OK; stdlib step passed
+Actual new full-CLI test: test_full_quickstart_cli_verifies_all_scenarios_and_sample ... ok
+Actual CLI arguments: --verify-sample examples/synthetic_quickstart_report.json
+Asserted overall exit: 0; asserted stderr: empty
+
+Actual successful test output, projected from CI:
+Quickstart CLI runtime: driver 3.12.14, child 3.12.14, platform linux
+PASS  docs+unit run: exit 0, all 2 results ok, JSON report written
+PASS  failing docs run: exit 1, docs FAIL recorded, JSON report written
+PASS  failing unit run: exit 1, unit FAIL recorded, JSON report written
+PASS  sample report verified: examples/synthetic_quickstart_report.json
+synthetic quickstart OK (3/3 scenarios, all output in disposable dirs)
+
+All scenarios execute the real runner with synthetic manifests in disposable dirs.
+No product/sample/workflow edit, manual dispatch, skipped scenario or omitted flag.
+Temporary raw reports are cleaned by the quickstart and are not retained here.
+This verifies the selected journey in the named supported environment, not other
+platforms, private fleet health, model quality, sandbox isolation or production use.

@@ -1,5 +1,17 @@
 # Source Register
 
+## October 4 focused candidate observation
+
+Publication follow-through: independent review accepted the bounded static case study, and Stephen approved source integration and release. QA Kit PR #11 was merged at exact source `595812b22269527dfad3952b1739eba7a36ad1ba` on October 4. The capture observations below retain their original scope; versioned publication is recorded separately in the repositories' GitHub Releases. This does not refresh fleet scores or qualify a hiring flagship.
+
+The [focused candidate evidence ledger](docs/showcase-evidence.md) binds new copy to showcase base `b4c703878f777f366540572546af666e832227c4`, QA Kit `29f4d08911eed530cf09c855306b145078de8805` and BeanFit `1d5d960c9d94436e46f74247ef53d24d7fad4634`. Kickoff local heads matched GitHub main through API inspection. This is selected source identity, not a refreshed ecosystem survey or publication clearance.
+
+The [QA transcript](assets/qa-quickstart-output.txt) preserves an earlier failed sample comparison and appends the successful complete Ubuntu CLI/sample run. [QA PR #11](https://github.com/stevekkall-beansgc/qa-kit/pull/11), candidate `595812b22269527dfad3952b1739eba7a36ad1ba`, adds only the full-CLI regression test over base `29f4d089`; no runner, sample or workflow change. Its normal first-attempt CI passed all 160 tests. The [lesson](docs/what-i-learned.md) supports a bounded checker correction and CI follow-through using exact public source. New local candidate results remain [separate](assets/showcase-check-results.txt) from the existing showcase base-source CI run.
+
+Stephen confirms design ownership for QA Kit and the checker correction, permits public reuse of retained showcase assets, and nominates beanscg@gmail.com for contact. Material AI assistance is disclosed in the [entry](README.md#contribution-and-contact). These declarations do not establish personal implementation/validation of every part, a repository-wide license, third-party provenance or full history/exposure clearance. No private-system demo, deployed journey, calibration, user impact or whole-repo rights/security acceptance is established. Earlier diagrams, versions and indexes are historical artifacts, not current qualified proof.
+
+## September 25 historical register
+
 Public links and versions below were checked on **2026-09-25**. Version numbers refer to the latest release visible on each repository's Releases page at that time.
 
 This register is historical. See the [initial October 2 baseline](docs/SHOWCASE-EVIDENCE-BASELINE-20261002.md) and [later October 2 public evidence index](docs/CURRENT-PUBLIC-EVIDENCE-20261002.md) for separate observations; the statements below retain their original date and scope.
