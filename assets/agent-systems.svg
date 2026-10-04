@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000" role="img" aria-labelledby="title desc">
-  <title id="title">Legume Labs agent systems capability map</title>
-  <desc id="desc">BeanMind, Agency, and Beanstalk are shown as core agent capabilities. A person carries context into Agency and results into Beanstalk; Agency executes approved tasks. Four separate supporting systems cover scheduling, tool selection, local model quality, and shared contracts.</desc>
+  <title id="title">Legume Labs historical agent systems capability map</title>
+  <desc id="desc">September 25 historical roles and proposed human handoffs, not current qualification or a recorded demo. BeanMind, Agency, and Beanstalk are shown as core agent capabilities. A person carries context into Agency and results into Beanstalk; Agency executes approved tasks. Four separate supporting systems cover scheduling, tool selection, local model quality, and shared contracts.</desc>
   <defs>
     <filter id="shadow" x="-12%" y="-12%" width="124%" height="140%">
       <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#223149" flood-opacity="0.08"/>
@@ -14,7 +14,7 @@
   <g transform="translate(1398 38)">
     <rect width="330" height="36" rx="18" fill="#F8EEDC"/>
     <circle cx="19" cy="18" r="5" fill="#BA7A25"/>
-    <text x="34" y="23" fill="#8B5B1F" font-family="Inter, Avenir Next, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">SYNTHETIC SHOWCASE · HUMAN HANDOFFS</text>
+    <text x="34" y="23" fill="#8B5B1F" font-family="Inter, Avenir Next, system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.3">HISTORICAL ROLES · PROPOSED HANDOFFS</text>
   </g>
 
   <rect x="72" y="177" width="1656" height="48" rx="16" fill="#E9EEF4"/>
@@ -104,7 +104,7 @@
 
   <line x1="72" y1="860" x2="1728" y2="860" stroke="#DCE3EB"/>
   <text x="72" y="894" fill="#526276" font-family="Inter, Avenir Next, system-ui, sans-serif" font-size="13">Showcase plan, not an existing public demo: use synthetic data, record an actual run, and label each capability's evidence.</text>
-  <text x="1728" y="894" text-anchor="end" fill="#8491A0" font-family="Inter, Avenir Next, system-ui, sans-serif" font-size="12">PRIVATE SOURCE  ·  ROLE-LEVEL VIEW</text>
+  <text x="1728" y="894" text-anchor="end" fill="#8491A0" font-family="Inter, Avenir Next, system-ui, sans-serif" font-size="12">HISTORICAL · 25 SEP 2026</text>
   <rect x="72" y="924" width="1656" height="42" rx="14" fill="#EEEAF4"/>
   <text x="900" y="951" text-anchor="middle" fill="#58466F" font-family="Inter, Avenir Next, system-ui, sans-serif" font-size="13" font-weight="600">Repo docs show a thin BeanMind task reference, not verified memory sync; Agency executes after approval; Beanstalk evaluation is separate and offline.</text>
 </svg>
