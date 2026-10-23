@@ -11,7 +11,7 @@ permissions:
 jobs:
   compliance:
     if: github.ref == 'refs/heads/main'
-    uses: stevekkall-beansgc/gate-kit/.github/workflows/compliance.yml@v0.4.23
+    uses: stevekkall-beansgc/gate-kit/.github/workflows/compliance.yml@v0.7.7
     with:
       repo: bean-labs
       full: false
