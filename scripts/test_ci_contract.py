@@ -6,7 +6,7 @@ import unittest
 
 
 CHECKOUT = "actions/checkout@11d5960a326750d5838078e36cf38b85af677262"
-GATE = "stevekkall-beansgc/gate-kit/.github/workflows/compliance.yml@v0.4.23"
+GATE = "stevekkall-beansgc/gate-kit/.github/workflows/compliance.yml@v0.7.7"
 
 
 def active_lines(workflow):
@@ -167,7 +167,7 @@ class WorkflowBoundaryNegatives(unittest.TestCase):
                     self.assertTrue(workflow_boundary_errors(changed, gate=workflow == self.gate_workflow))
 
     def test_gate_upgrade_or_input_override_rejected(self):
-        for old, new in (("@v0.4.23", "@main"), ("full: false", "full: true"),
+        for old, new in (("@v0.7.7", "@main"), ("full: false", "full: true"),
                          ("repo: bean-labs", "repo: other"),
                          ("      full: false", "      full: false\n      runner: beans-mac")):
             with self.subTest(new=new):
